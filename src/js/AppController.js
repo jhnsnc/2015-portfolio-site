@@ -28,7 +28,7 @@ angular.module( 'cjPortfolioSite', [
 	console.log("============================================================"); //divider
 	console.log("Thanks for opening up the console, but all the code here is uglified! \n"+
 				" You may be more interested in my source code. \n You'll find it here: ");
-	console.log("http://www.github.com/jhnsnc/2015-personal-site"); //TODO: get the actual link
+	console.log("http://github.com/jhnsnc/2015-portfolio-site");
 
 	//update title
 	$scope.$on('$stateChangeSuccess', function(evt, toState, toParams, fromState, fromParams) {
