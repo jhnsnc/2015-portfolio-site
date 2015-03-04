@@ -36,7 +36,7 @@ angular.module( 'cjPortfolioSite')
 						starElement.select('#base').attr({ fill: (scope.unselectedColor ? scope.unselectedColor : "#666") });
 					}
 					xPos = i * (starWidth + starSpacing);
-					canvas.append( starElement.clone().transform( "t"+xPos+",0" ) );
+					canvas.append( starElement.clone().transform( "t" + xPos + ",0" ) );
 				}
 
 				$el.append(canvas);
