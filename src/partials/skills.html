@@ -9,10 +9,10 @@
 				</div>
 				<div class="col-xs-12" ng-repeat="skill in section.skills">
 					<div class="skill-row row" ng-class="{'bg-dark-gray': $even}">
-						<div class="col-sm-8">
+						<div class="col-xs-8">
 							<p class="skill-name" ng-bind="skill.name"></p>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-xs-4">
 							<cj-star-rating class="skill-rating" rating="{{skill.rating}}" selected-color="#FCCD21" unselected-color="#CCCCCC" star-asset-src="/assets/images/rating-star.svg"></cj-star-rating>
 						</div>
 					</div>
