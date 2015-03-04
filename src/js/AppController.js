@@ -27,11 +27,12 @@ angular.module( 'cjPortfolioSite', [
 				"       88       `Y8888P\"Y8888P'\"Y888P'\"Y88P\"Y8888P\"      `8' "); //Hello! ascii art
 	console.log("============================================================"); //divider
 	console.log("Thanks for opening up the console, but all the code here is uglified! \n"+
-				" You may be more interested in my source code. \n You'll find it here: ");
+				" You may be more interested in my source code: ");
 	console.log("http://github.com/jhnsnc/2015-portfolio-site");
 
 	//update title
 	$scope.$on('$stateChangeSuccess', function(evt, toState, toParams, fromState, fromParams) {
+		$scope.activeState = toState.name;
 		if ( angular.isDefined( toState.data.pageTitle) ) {
 			$scope.pageTitle = toState.data.pageTitle + " | Chris Johnson";
 		}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="rating_star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+	<g>
+		<polygon id="base" fill="#00FF00" points="16,1 20.242,11.746 31.771,12.459 22.863,19.813 25.746,31 16,24.8 6.253,31 9.138,19.813 0.228,12.459 11.758,11.746 "/>
+		<polygon opacity="0.15" fill="#1A1A1A" points="3.398,15.076 9.138,19.813 6.253,31 16,24.8 25.746,31 22.863,19.813 25.107,17.962 "/>
+	</g>
+</svg>

@@ -1,0 +1,38 @@
+@import "../variables";
+
+.skills-content {
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	.skill-row {
+		transition: all 200ms;
+		
+		.skill-name {
+			margin: 0;
+			font-size: 24px;
+			font-weight: $light;
+			line-height: 46px;
+			transition: all 200ms;
+		}
+		.skill-rating {
+			float: right;
+			display: block;
+			height: 32px;
+			margin: 9px 10px;
+			transition: all 200ms;
+			transform-origin: 100% 50%;
+		}
+
+		&:hover {
+			background: $mediumGray;
+
+			.skill-name {
+				font-size: 26px;
+			}
+			.skill-rating {
+				transform: scale(1.1);
+			}
+		}
+	}
+}

@@ -1,13 +1,10 @@
-body {
-	color: #FFFFFF;
-	background: #181818;
-}
+@import "general";
+@import "typography";
 
-.primary-navigation {
-	min-height: 80px;
-	margin-bottom: -80px;
-}
+@import "navigation";
+@import "banners";
 
-.main-container {
-	padding-top: 80px;
-}
+@import "modules/about";
+//@import "modules/work";
+@import "modules/skills";
+//@import "modules/contact";

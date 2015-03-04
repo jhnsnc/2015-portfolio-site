@@ -1,0 +1,42 @@
+@import "variables";
+
+p.large-text {
+	font-size: 24px;
+	line-height: 1.8;
+}
+
+p.cta-text {
+	font-size: 18px;
+	line-height: 46px;
+	a {
+		margin: 0 12px;
+	}
+}
+
+// Weight
+.thin-weight {
+	font-weight: $thin;
+}
+.light-weight {
+	font-weight: $light;
+}
+.normal-weight {
+	font-weight: $normal;
+}
+.bold-weight {
+	font-weight: $bold;
+}
+.ultra-bold-weight {
+	font-weight: $ultraBold;
+}
+
+// Spacing
+.slight-spacing {
+	letter-spacing: 0.5px;
+}
+.add-spacing {
+	letter-spacing: 1.0px;
+}
+.heavy-spacing {
+	letter-spacing: 2.0px;
+}

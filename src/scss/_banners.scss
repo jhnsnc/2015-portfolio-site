@@ -1,0 +1,32 @@
+@import "variables";
+
+.page-banner {
+	min-height: 320px;
+	margin-bottom: 50px;
+
+	h1 {
+		margin: 100px 0;
+		color: $white;
+		color: rgba($white, 0.9);
+		font-size: 100px;
+		font-weight: $ultraBold;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 120px;
+		letter-spacing: 8px;
+		text-shadow: 7px 7px 0 rgba($black, 0.25);
+	}
+
+	.about-content & {
+		background-color: $aboutColor;
+	}
+	.work-content & {
+		background-color: $workColor;
+	}
+	.skills-content & {
+		background-color: $skillsColor;
+	}
+	.contact-content & {
+		background-color: $contactColor;
+	}
+}

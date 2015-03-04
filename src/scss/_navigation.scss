@@ -1,0 +1,70 @@
+@import "variables";
+
+// Top Navigation
+.primary-navigation {
+	margin-bottom: 0;
+	min-height: 100px;
+	background: $black; //TODO: gradient?
+	border-color: transparent;
+}
+
+.navbar-nav {
+	> li {
+		> a {
+			padding: 30px;
+			margin-top: -2px;
+			font-size: 36px;
+			line-height: 40px;
+			color: $white;
+			color: rgba($white, 0.85);
+			text-shadow: none;
+			transition: all 150ms;
+
+			&:hover, &:focus {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+
+		&.about {
+			a:hover, a:focus {
+				background: $aboutColor;
+			}
+			&.active > a {
+				color: $white;
+				background: $aboutColor;
+				box-shadow: none;
+			}
+		}
+		&.work {
+			a:hover, a:focus {
+				background: $workColor;
+			}
+			&.active > a {
+				color: $white;
+				background: $workColor;
+				box-shadow: none;
+			}
+		}
+		&.skills {
+			a:hover, a:focus {
+				background: $skillsColor;
+			}
+			&.active > a {
+				color: $white;
+				background: $skillsColor;
+				box-shadow: none;
+			}
+		}
+		&.contact {
+			a:hover, a:focus {
+				background: $contactColor;
+			}
+			&.active > a {
+				color: $white;
+				background: $contactColor;
+				box-shadow: none;
+			}
+		}
+	}
+}

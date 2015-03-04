@@ -1,0 +1,15 @@
+@import "../variables";
+
+.about-content {
+	h2 {
+		font-size: 72px;
+	}
+	h3 {
+		font-size: 48px;
+		font-weight: $light;
+	}
+
+	p.large-text {
+		padding: 30px;
+	}
+}

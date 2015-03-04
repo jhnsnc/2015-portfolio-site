@@ -33,7 +33,7 @@ gulp.task('clean-dist', function() {
 		}));
 });
 
-// CSS
+// CSS //TODO: maybe add an autoprefixer?
 gulp.task('css', function() {
 	//lib CSS
 	gulp.src('./src/lib/css/**/*.css')
@@ -142,7 +142,27 @@ gulp.task('html-dist', function() {
 });
 
 // Images
-//TODO: copy ./src/images/**/*.*
+gulp.task('images', function() {
+	gulp.src('./src/images/**/*.*')
+		.pipe(copy('./dev/assets/images', {
+			prefix: 2
+		}));
+	gulp.src('./src/index.html')
+		.pipe(notify({
+			message: "Built images"
+		}));
+});
+gulp.task('images-dist', function() {
+	gulp.src('./src/images/**/*.*')
+		.pipe(copy('./dist/assets/images', {
+			prefix: 2
+		}));
+	gulp.src('./src/index.html')
+		.pipe(notify({
+			message: "Built images (for dist)"
+		}));
+});
+
 
 // Fonts
 gulp.task('fonts', function() {
@@ -176,7 +196,7 @@ gulp.task('watch', function() {
 	gulp.watch('./src/partials/**/*.html', ['html']);
 });
 
-gulp.task('default', ['css', 'js', 'html', 'fonts']);
-gulp.task('dist', ['css-dist', 'js-dist', 'html-dist', 'fonts-dist']);
+gulp.task('default', ['css', 'js', 'html', 'images', 'fonts']);
+gulp.task('dist', ['css-dist', 'js-dist', 'html-dist', 'images-dist', 'fonts-dist']);
 //use "gulp watch" while developing
 //use "gulp clean" or "gulp clean-dist" to wipe a directory
