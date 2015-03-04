@@ -36,5 +36,8 @@ angular.module( 'cjPortfolioSite', [
 		if ( angular.isDefined( toState.data.pageTitle) ) {
 			$scope.pageTitle = toState.data.pageTitle + " | Chris Johnson";
 		}
+		if ( angular.isDefined( toState.data.bannerText) ) {
+			$scope.bannerText = toState.data.bannerText;
+		}
 	})
 }]);

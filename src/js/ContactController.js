@@ -12,7 +12,8 @@ angular.module( 'cjPortfolioSite.contact', [
 			}
 		},
 		data: {
-			pageTitle: 'Contact'
+			pageTitle: 'Contact',
+			bannerText: 'Contact'
 		}
 	});
 }])

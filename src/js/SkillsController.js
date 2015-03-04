@@ -12,7 +12,8 @@ angular.module( 'cjPortfolioSite.skills', [
 			}
 		},
 		data: {
-			pageTitle: 'Skills'
+			pageTitle: 'Skills',
+			bannerText: 'Skills'
 		}
 	});
 }])

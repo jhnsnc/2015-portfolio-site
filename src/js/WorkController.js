@@ -12,7 +12,8 @@ angular.module( 'cjPortfolioSite.work', [
 			}
 		},
 		data: {
-			pageTitle: 'Work'
+			pageTitle: 'Work',
+			bannerText: 'Projects'
 		}
 	});
 }])

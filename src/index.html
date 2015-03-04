@@ -3,6 +3,8 @@
 <head>
 	<title ng-bind="pageTitle"></title>
 
+	<!-- TODO: add favicon -->
+
 	<!-- social media tags -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@jhnsnc">
@@ -54,6 +56,15 @@
 		</div>
 	</nav>
 
-	<div ui-view="main"></div>
+	<div class="container-fluid">
+		<!-- banner -->
+		<div class="row">
+			<div class="page-banner {{activeState}} col-xs-12">
+				<h1 ng-bind="bannerText"></h1>
+			</div>
+		</div>
+
+		<div ui-view="main"></div>
+	</div>
 </body>
 </html>

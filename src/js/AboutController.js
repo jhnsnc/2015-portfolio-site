@@ -12,7 +12,8 @@ angular.module( 'cjPortfolioSite.about', [
 			}
 		},
 		data: {
-			pageTitle: 'About'
+			pageTitle: 'About',
+			bannerText: 'Profile'
 		}
 	});
 }])

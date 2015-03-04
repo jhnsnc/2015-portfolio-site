@@ -3,6 +3,7 @@
 .page-banner {
 	min-height: 320px;
 	margin-bottom: 50px;
+	transition: background-color 500ms;
 
 	h1 {
 		margin: 100px 0;
@@ -17,16 +18,16 @@
 		text-shadow: 7px 7px 0 rgba($black, 0.25);
 	}
 
-	.about-content & {
+	&.about {
 		background-color: $aboutColor;
 	}
-	.work-content & {
+	&.work {
 		background-color: $workColor;
 	}
-	.skills-content & {
+	&.skills {
 		background-color: $skillsColor;
 	}
-	.contact-content & {
+	&.contact {
 		background-color: $contactColor;
 	}
 }
