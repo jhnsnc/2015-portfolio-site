@@ -65,7 +65,7 @@ gulp.task('css-dist', function() {
 			lineNumbers: false,
 		 	loadPath: './src/scss/*'
 		})
-		.pipe(gulp.dest('./dev/assets/styles'))
+		.pipe(gulp.dest('./dist/assets/css'))
 		.pipe(notify({
 			message: "Built CSS (for dist)"
 		}));
@@ -96,7 +96,7 @@ gulp.task('js-dist', function() {
 	gulp.src('./src/js/**/*.js')
 		.pipe(uglify())
 		.pipe(concat('app.js'))
-		.pipe(gulp.dest('./dev/assets/js'))
+		.pipe(gulp.dest('./dist/assets/js'))
 		.pipe(notify({
 			message: "Built JS (for dist)"
 		}))
