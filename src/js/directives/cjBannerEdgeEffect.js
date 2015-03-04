@@ -80,7 +80,7 @@ angular.module( 'cjPortfolioSite')
 						particle.triangle = triangle;
 
 						dimensions = getRandomParticleDimensions();
-						triangle.transform( "S" + dimensions.w + " " + dimensions.l + " " + particle.cx + " " + particle.cy );
+						triangle.transform( "S" + dimensions.w + "," + dimensions.l + "," + particle.cx + "," + particle.cy );
 
 						//add the particle and start animating
 						particles.push( particle );
@@ -107,7 +107,7 @@ angular.module( 'cjPortfolioSite')
 				var dimensions = getRandomParticleDimensions();
 
 				triangle.stop().animate({
-						transform: "S" + dimensions.w + " " + dimensions.l + " " + particle.cx + " " + particle.cy
+						transform: "S" + dimensions.w + "," + dimensions.l + "," + particle.cx + "," + particle.cy
 					}, particleDurationMin + (Math.random() * (particleDurationMax - particleDurationMin)),
 					mina.easeinout,
 					function() {

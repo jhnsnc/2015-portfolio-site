@@ -24,10 +24,10 @@ angular.module( 'cjPortfolioSite')
 
 			//load star asset
 			Snap.load(scope.starAssetSrc, function(fragment) {
-				var starElement, i, xPos;
+				var starElement, i;
 
 				//default base to the selected color
-				var starElement = fragment.select('g');
+				starElement = fragment.select('g');
 				starElement.select('#base').attr({ fill: (scope.selectedColor ? scope.selectedColor : "#f00") });
 
 				//add clones of starElement with appropriate color and position (transform)
@@ -35,11 +35,8 @@ angular.module( 'cjPortfolioSite')
 					if ( i == scope.rating ) {
 						starElement.select('#base').attr({ fill: (scope.unselectedColor ? scope.unselectedColor : "#666") });
 					}
-					xPos = i * (starWidth + starSpacing);
-					canvas.append( starElement.clone().transform( "t" + xPos + ",0" ) );
+					canvas.append( starElement.clone().transform( "t" + (i * (starWidth + starSpacing)) + ",0" ) );
 				}
-
-				$el.append(canvas);
 			});
 		}
 	};
