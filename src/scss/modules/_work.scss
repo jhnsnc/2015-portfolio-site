@@ -1,0 +1,84 @@
+@import "../variables";
+
+.work-content {
+	$transition: all 200ms;
+	.portfolio-item {
+		cursor: pointer;
+		position: relative;
+		max-width: 400px;
+		overflow: hidden;
+		border: 2px solid $mediumGray;
+		transition: $transition;
+
+		img, .hover-info {
+			transition: $transition;
+		}
+		.hover-info {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba($black, 0.75);
+			opacity: 0.0;
+			
+			&:before, &:after {
+				content: " ";
+				display: inline-block;
+				height: 100%;
+				width: 1%;
+				vertical-align: middle;
+			}
+			.inner {
+				display: inline-block;
+				width: 96%;
+				vertical-align: middle;
+			}
+		}
+		.more-info-button {
+			display: inline-block;
+			padding: 10px 20px;
+			margin-top: 20px;
+			font-size: 18px;
+			line-height: 1.0;
+			font-weight: 300;
+			letter-spacing: 1.0px;
+			text-transform: uppercase;
+			background-color: $orange;
+		}
+
+		&:hover, &:focus {
+			img {
+				-webkit-filter: blur(4px);
+				filter: blur(4px);
+			}
+			.hover-info {
+				opacity: 1.0;
+			}
+		}
+		&.bancvue {
+			&:hover, &:focus {
+				border-color: $purple;
+			}
+			.more-info-button {
+				background-color: $purple;
+			}
+		}
+		&.personal {
+			&:hover, &:focus {
+				border-color: $red;
+			}
+			.more-info-button {
+				background-color: $red;
+			}
+		}
+		&.freelance {
+			&:hover, &:focus {
+				border-color: $orange;
+			}
+			.more-info-button {
+				background-color: $orange;
+			}
+		}
+	}
+}
