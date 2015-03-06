@@ -38,7 +38,7 @@
 	<div class="lightbox-container">
 		<div class="lightbox-content item-details-popup bg-black">
 
-			<img ng-src="{{selectedItem.thumbnailImage}}" />
+			<img class="no-select" ng-src="{{selectedItem.thumbnailImage}}" />
 
 			<div class="item-details-inner {{selectedItem.category}}">
 				<div class="top">
@@ -46,10 +46,10 @@
 					<h3 class="light-weight" ng-bind="selectedItem.tech"></h3>
 				</div>
 				<p ng-bind="selectedItem.description"></p>
-				<a class="item-external-link" ng-href="{{selectedItem.link}}" target="_blank" ng-bind="selectedItem.linkText"></a>
+				<a class="item-external-link no-select" ng-href="{{selectedItem.link}}" target="_blank" ng-bind="selectedItem.linkText"></a>
 			</div>
 
-			<div class="lightbox-close-button" ng-click="closeItemDetails()">&times;</div>
+			<div class="lightbox-close-button no-select" ng-click="closeItemDetails()">&times;</div>
 		</div>
 	</div>
 </div>
