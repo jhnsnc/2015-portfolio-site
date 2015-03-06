@@ -75,8 +75,7 @@ angular.module( 'cjPortfolioSite.skills', [
 			skills: [
 				{ name: "Spanish", rating: 5 },
 				{ name: "instruction/pedagogy", rating: 5 },
-				{ name: "audio editing", rating: 3 },
-				{ name: "Rubik's cube", rating: 4 },
+				{ name: "audio editing", rating: 3 }
 			]
 	}
 
