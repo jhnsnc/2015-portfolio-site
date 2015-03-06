@@ -11,8 +11,8 @@ angular.module( 'cjPortfolioSite')
 
 			//"constants"
 			var numTrianglesPerCorner = 5;
-			var particleDurationMin = 10000;
-			var particleDurationMax = 20000;
+			var particleDurationMin = 7000;
+			var particleDurationMax = 14000;
 			var particleFillColor = "#1A1A1A";
 			var particleFillOpacity = 0.08;
 			var dimensionsOffsetVariation = 0.45; //[0.0-1.0], higher value allows for more truly random results
