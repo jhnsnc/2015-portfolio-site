@@ -2,6 +2,7 @@
 var gulp = 			require('gulp');
 var gulpUtil = 		require('gulp-util');
 
+var autoprefixer = 	require('gulp-autoprefixer');
 var clean = 		require('gulp-clean');
 var concat = 		require('gulp-concat');
 var copy = 			require('gulp-copy');
@@ -33,7 +34,7 @@ gulp.task('clean-dist', function() {
 		}));
 });
 
-// CSS //TODO: maybe add an autoprefixer?
+// CSS
 gulp.task('css', function() {
 	//lib CSS
 	gulp.src('./src/lib/css/**/*.css')
@@ -47,6 +48,10 @@ gulp.task('css', function() {
 			lineNumbers: true,
 			loadPath: './src/scss/*'
 		})
+		.pipe(autoprefixer({
+			browsers: ['> 2%', 'last 2 versions'],
+			cascade: false
+		}))
 		.pipe(gulp.dest('./dev/assets/css'))
 		.pipe(notify({
 			message: "Built CSS"
@@ -65,6 +70,10 @@ gulp.task('css-dist', function() {
 			lineNumbers: false,
 		 	loadPath: './src/scss/*'
 		})
+		.pipe(autoprefixer({
+			browsers: ['> 2%', 'last 2 versions'],
+			cascade: false
+		}))
 		.pipe(gulp.dest('./dist/assets/css'))
 		.pipe(notify({
 			message: "Built CSS (for dist)"
