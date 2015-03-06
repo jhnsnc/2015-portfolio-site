@@ -15,6 +15,15 @@ body {
 	font-family: $lato;
 }
 
+*::selection {
+	background: $orange;
+	background: rgba($orange, 0.75);
+}
+*::-moz-selection {
+	background: $orange;
+	background: rgba($orange, 0.75);
+}
+
 // Colors
 .bg-dark-gray {
 	background-color: $darkGray;
