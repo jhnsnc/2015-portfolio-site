@@ -6,6 +6,8 @@
 		cursor: pointer;
 		position: relative;
 		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
 		overflow: hidden;
 		border: 2px solid $mediumGray;
 		transition: $transition;
@@ -79,6 +81,116 @@
 			.more-info-button {
 				background-color: $orange;
 			}
+		}
+	}
+}
+
+.item-details-popup {
+	text-align: center;
+	img {
+		max-width: 100%;
+	}
+}
+
+.item-details-inner {
+	padding: 0 15px;
+
+	h3 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 1.6;
+	}
+
+	.item-external-link {
+		display: inline-block;
+		padding: 15px 30px;
+		margin: 15px auto 20px;
+		color: $white;
+		font-size: 18px;
+		line-height: 1.0;
+		font-weight: 300;
+		letter-spacing: 1.0px;
+		text-transform: uppercase;
+		background-color: $orange;
+		&:hover, &:focus {
+			color: $white;
+			text-decoration: none;
+		}
+	}
+
+	.top {
+		padding: 5px 15px 10px;
+		margin: 0 -15px 20px;
+	}
+
+	&.bancvue {
+		.item-external-link {
+			background-color: darken($purple, 10%);
+			&:hover, &:focus {
+				background-color: $purple;
+			}
+		}
+		.top {
+			background: darken($purple, 10%);
+		}
+	}
+	&.personal {
+		.item-external-link {
+			background-color: darken($red, 1%);
+			&:hover, &:focus {
+				background-color: lighten($red, 9%);
+			}
+		}
+		.top {
+			background: darken($red, 1%);
+		}
+	}
+	&.freelance {
+		.item-external-link {
+			background-color: darken($orange, 3%);
+			&:hover, &:focus {
+				background-color: lighten($orange, 7%);
+			}
+		}
+		.top {
+			background: darken($orange, 3%);
+		}
+	}
+}
+
+@media (min-width: $md-breakpoint) {
+	.item-details-popup {
+		padding-left: 400px;
+		min-height: 400px;
+
+		img {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	.item-details-inner {
+		text-align: left;
+		padding-left: 25px;
+		.top {
+			padding-left: 25px;
+			margin-left: -25px;
+		}
+	}
+}
+
+@media (min-width: $lg-breakpoint) {
+	.item-details-inner {
+		h2 {
+			font-size: 36px;
+		}
+
+		p {
+			line-height: 1.8;
 		}
 	}
 }

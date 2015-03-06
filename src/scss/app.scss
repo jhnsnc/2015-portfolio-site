@@ -1,8 +1,10 @@
+//TODO: maybe reorganize the SCSS into better subfolders?
 @import "general";
 @import "typography";
 
 @import "navigation";
 @import "banners";
+@import "lightbox";
 
 @import "modules/about";
 @import "modules/work";

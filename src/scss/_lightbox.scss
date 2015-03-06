@@ -1,0 +1,66 @@
+@import "variables";
+
+.lightbox-background {
+	z-index: 1000;
+	cursor: pointer;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba($trueBlack, 0.8);
+}
+
+.lightbox-container {
+	pointer-events: none;
+	z-index: 1001;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow-y: auto;
+}
+
+.lightbox-content {
+	pointer-events: all;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	transition: margin 300ms;
+	box-shadow: 0 0 100px rgba($trueBlack, 0.85);
+}
+
+@media (min-width: $sm-breakpoint) {
+	.lightbox-content {
+		left: 50%;
+		width: 700px;
+		margin-top: 50px;
+		margin-left: -350px;
+	}
+}
+
+@media (min-width: $md-breakpoint) {
+	.lightbox-content {
+		width: 920px;
+		margin-left: -460px;
+		margin-top: 150px;
+	}
+}
+
+@media (min-width: $lg-breakpoint) {
+	.lightbox-content {
+		width: 1000px;
+		margin-left: -500px;
+	}
+}
+
+.lightbox-close-button {
+	cursor: pointer;
+	position: absolute;
+	right: 5px;
+	top: -3px;
+	font-size: 32px;
+	font-weight: $normal;
+	line-height: 1.0;
+}

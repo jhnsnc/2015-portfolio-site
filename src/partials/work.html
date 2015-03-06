@@ -5,7 +5,7 @@
 			<!-- project list -->
 			<div class="row">
 				<div class="col-sm-6 space-below" ng-repeat="item in portfolioItems">
-					<div class="portfolio-item {{item.category}} text-center no-select">
+					<div class="portfolio-item {{item.category}} text-center no-select" ng-click="showItemDetails(item)">
 						<img class="full-width" ng-src="{{item.thumbnailImage}}" />
 						<div class="hover-info text-center">
 							<div class="inner">
@@ -18,9 +18,6 @@
 				</div>
 			</div>
 
-			<!-- details popup -->
-			<!-- TODO: implement -->
-
 			<!-- next section -->
 			<div class="row space-above">
 				<div class="col-xs-12">
@@ -31,6 +28,28 @@
 				</div>
 			</div>
 
+		</div>
+	</div>
+</div>
+
+<!-- details lightbox -->
+<div ng-show="showItemDetailsPopup">
+	<div class="lightbox-background" ng-click="closeItemDetails()"></div>
+	<div class="lightbox-container">
+		<div class="lightbox-content item-details-popup bg-black">
+
+			<img ng-src="{{selectedItem.thumbnailImage}}" />
+
+			<div class="item-details-inner {{selectedItem.category}}">
+				<div class="top">
+					<h2 class="bold-weight add-spacing" ng-bind="selectedItem.name"></h2>
+					<h3 class="light-weight" ng-bind="selectedItem.tech"></h3>
+				</div>
+				<p ng-bind="selectedItem.description"></p>
+				<a class="item-external-link" ng-href="{{selectedItem.link}}" target="_blank" ng-bind="selectedItem.linkText"></a>
+			</div>
+
+			<div class="lightbox-close-button" ng-click="closeItemDetails()">&times;</div>
 		</div>
 	</div>
 </div>

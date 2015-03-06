@@ -24,6 +24,7 @@ angular.module( 'cjPortfolioSite.work', [
 			name: "GamerEye Trainer",
 			category: "personal",
 			link: "http://www.overwolf.com/sentry-challenge-2014/#prize02",
+			linkText: "More Info",
 			thumbnailImage: "/assets/images/portfolio-screenshot-gamereye-trainer.jpg",
 			shortDescription: "Overwolf App",
 			tech: "JavaScript, Overwolf, Tobii EyeX (eye tracker)",
@@ -35,6 +36,7 @@ angular.module( 'cjPortfolioSite.work', [
 			name: "Shadow of a Thought",
 			category: "personal",
 			link: "http://gamejolt.com/games/shooter/shadow-of-a-thought/33167/",
+			linkText: "Play Now",
 			thumbnailImage: "/assets/images/portfolio-screenshot-shadow-of-a-thought.jpg",
 			shortDescription: "Flash Game",
 			tech: "Flash, Flex, ActionScript 3, Photoshop, FL Studio (music)",
@@ -46,6 +48,7 @@ angular.module( 'cjPortfolioSite.work', [
 			name: "Destinations CU",
 			category: "bancvue",
 			link: "https://www.destinationscu.org/",
+			linkText: "Visit Site",
 			thumbnailImage: "/assets/images/portfolio-screenshot-destinations.jpg",
 			shortDescription: "Credit Union Website",
 			tech: "HTML, CSS, CSS animations, jQuery, in-house CMS",
@@ -58,6 +61,7 @@ angular.module( 'cjPortfolioSite.work', [
 			name: "Missouri Valley FCU",
 			category: "bancvue",
 			link: "https://www.movfcu.org/",
+			linkText: "Visit Site",
 			thumbnailImage: "/assets/images/portfolio-screenshot-movfcu.jpg",
 			shortDescription: "Credit Union Website",
 			tech: "HTML, CSS, jQuery, in-house CMS, PHP:TAL",
@@ -70,6 +74,7 @@ angular.module( 'cjPortfolioSite.work', [
 			name: "Metropolitan National Bank",
 			category: "bancvue",
 			link: "https://www.metronationalbank.com/",
+			linkText: "Visit Site",
 			thumbnailImage: "/assets/images/portfolio-screenshot-metro-national.jpg",
 			shortDescription: "Bank Website",
 			tech: "HTML, CSS, jQuery, JavaScript, in-house CMS, PHP:TAL",
@@ -81,6 +86,7 @@ angular.module( 'cjPortfolioSite.work', [
 			name: "Atlantic Regional FCU",
 			category: "bancvue",
 			link: "https://www.atlanticregional.com/",
+			linkText: "Visit Site",
 			thumbnailImage: "/assets/images/portfolio-screenshot-atlantic-regional.jpg",
 			shortDescription: "Credit Union Website",
 			tech: "HTML, CSS, jQuery, JavaScript, in-house CMS",
@@ -92,18 +98,19 @@ angular.module( 'cjPortfolioSite.work', [
 			name: "Impossible Carrot",
 			category: "personal",
 			link: "http://gamejolt.com/games/other/impossible-carrot/52482/",
+			linkText: "Play Now",
 			thumbnailImage: "/assets/images/portfolio-screenshot-impossible-carrot.jpg",
 			shortDescription: "Flash Game",
 			tech: "Flash, Flex, ActionScript 3, XML",
 			description: "I made this game just for fun a few years back. I wanted to create a devilishly "+
 				"difficult game that I could enjoy testing while improving my Flash skills. My design goal "+
-				"was a rising/falling intensity of gameplay that reflected the music. My technical goals were "+
-				"to push the limits of how many non-trivial particles I could make Flash handle and to "+
-				"improve my asset management in Flash."
+				"was a rising/falling intensity of gameplay that reflected the music. My primary technical "+
+				"goal was to push the limits of how many non-trivial particles I could make Flash handle."
 		}, {
 			name: "War of 1812",
 			category: "freelance",
 			link: "http://warof1812.thinkport.org/",
+			linkText: "Visit Site",
 			thumbnailImage: "/assets/images/portfolio-screenshot-war-of-1812.jpg",
 			shortDescription: "Educational Website",
 			tech: "Custom MVC JavaScript, HTML, CSS, some Flash fallbacks",
@@ -115,6 +122,7 @@ angular.module( 'cjPortfolioSite.work', [
 			name: "Saving Smith Island",
 			category: "freelance",
 			link: "http://smithisland.thinkport.org/",
+			linkText: "Visit Site",
 			thumbnailImage: "/assets/images/portfolio-screenshot-saving-smith-island.jpg",
 			shortDescription: "Educational Website",
 			tech: "Custom MVC JavaScript, HTML, CSS, some Flash fallbacks",
@@ -124,6 +132,16 @@ angular.module( 'cjPortfolioSite.work', [
 				"and debugging cross-browser."
 		}
 	];
+
+	$scope.showItemDetails = function(item) {
+		$scope.selectedItem = item;
+
+		$scope.showItemDetailsPopup = true;
+	}
+
+	$scope.closeItemDetails = function() {
+		$scope.showItemDetailsPopup = false;
+	}
 
 	$scope.portfolioItems = portfolioItems;
 }]);
