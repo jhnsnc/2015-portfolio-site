@@ -40,7 +40,7 @@
 	<!-- TODO: maybe change the navigation to static positioning rather than fixed -->
 	<nav class="primary-navigation navbar">
 		<div class="container">
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right no-select">
 				<li class="about" ng-class="{active: activeState === 'about'}">
 					<a title="About" href="#/about">
 						<span class="glyphicon glyphicon-user"></span>
@@ -72,7 +72,7 @@
 	<div class="container-fluid">
 		<!-- banner -->
 		<div class="row">
-			<div class="page-banner {{activeState}} col-xs-12" cj-banner-edge-effect>
+			<div class="page-banner {{activeState}} no-select col-xs-12" cj-banner-edge-effect>
 				<h1 ng-bind="bannerText"></h1>
 			</div>
 		</div>
