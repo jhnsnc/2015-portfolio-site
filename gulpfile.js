@@ -156,6 +156,10 @@ gulp.task('images', function() {
 		.pipe(copy('./dev/assets/images', {
 			prefix: 2
 		}));
+	gulp.src('./src/favicon.ico')
+		.pipe(copy('./dev/', {
+			prefix: 1
+		}));
 	gulp.src('./src/index.html')
 		.pipe(notify({
 			message: "Built images"
@@ -165,6 +169,10 @@ gulp.task('images-dist', function() {
 	gulp.src('./src/images/**/*.*')
 		.pipe(copy('./dist/assets/images', {
 			prefix: 2
+		}));
+	gulp.src('./src/favicon.ico')
+		.pipe(copy('./dist/', {
+			prefix: 1
 		}));
 	gulp.src('./src/index.html')
 		.pipe(notify({
