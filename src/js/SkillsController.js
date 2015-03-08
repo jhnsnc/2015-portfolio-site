@@ -34,18 +34,19 @@ angular.module( 'cjPortfolioSite.skills', [
 	var frontEndSection = {
 			name: "Front-End Skills",
 			skills: [
-				{ name: "jQuery", rating: 5 },
+				{ name: "jQuery, Underscore", rating: 5 },
 				{ name: "JSON, XML", rating: 5 },
 				{ name: "AngularJS", rating: 4 },
 				{ name: "Polymer", rating: 3 },
 				{ name: "Bootstrap", rating: 5 },
-				{ name: "Snap/Rafael (SVG)", rating: 3 },
+				{ name: "Snap/Rafael (SVG)", rating: 4 },
 				{ name: "SASS", rating: 5 },
 				{ name: "LESS", rating: 3 },
 				{ name: "Wordpress", rating: 4 },
 				{ name: "SEO", rating: 3 },
 				{ name: "image compression", rating: 5 },
-				{ name: "A/B testing", rating: 4 }
+				{ name: "A/B testing", rating: 4 },
+				{ name: "responsive", rating: 5 }
 			]
 	}
 	var generalDevelopmentSection = {
@@ -75,7 +76,7 @@ angular.module( 'cjPortfolioSite.skills', [
 	var miscellaneousSection = {
 			name: "Miscellaneous",
 			skills: [
-				{ name: "Spanish", rating: 5 },
+				{ name: "Spanish", rating: 4 },
 				{ name: "instruction/pedagogy", rating: 5 },
 				{ name: "audio editing", rating: 3 },
 				{ name: "remote/online work", rating: 5 }
