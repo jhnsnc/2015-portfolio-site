@@ -14,7 +14,7 @@ angular.module( 'cjPortfolioSite', [
 })
 
 .controller( 'AppController', ['$scope', '$location', function AppController( $scope, $location) {
-	//console message
+	//console welcome message
 	console.log("  ,ggg,        gg                                       ,g, \n"+
 				"  dP\"\"Y8b       88           ,dPYb, ,dPYb,               888 \n"+
 				"  Yb, `88       88           IP'`Yb IP'`Yb               888 \n"+
@@ -40,4 +40,9 @@ angular.module( 'cjPortfolioSite', [
 			$scope.bannerText = toState.data.bannerText;
 		}
 	})
+
+	//util functions
+	$scope.scrollToBanner = function() {
+		$('body').scrollTop($('.page-banner').position().top);
+	}
 }]);
