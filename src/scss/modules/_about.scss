@@ -2,14 +2,54 @@
 
 .about-content {
 	h2 {
-		font-size: 72px;
+		font-size: 44px;
+		text-align: center;
 	}
 	h3 {
-		font-size: 48px;
+		font-size: 28px;
 		font-weight: $light;
+		text-align: center;
 	}
 
 	p.large-text {
 		padding: 30px;
+	}
+}
+
+@media (min-width: $sm-breakpoint) {
+	.about-content {
+		h2 {
+			margin-top: 8px;
+			font-size: 48px;
+			text-align: left;
+		}
+		h3 {
+			font-size: 30px;
+			text-align: left;
+		}
+	}
+}
+
+@media (min-width: $md-breakpoint) {
+	.about-content {
+		h2 {
+			margin-top: 20px;
+			font-size: 62px;
+		}
+		h3 {
+			font-size: 40px;
+		}
+	}
+}
+
+@media (min-width: $lg-breakpoint) {
+	.about-content {
+		h2 {
+			margin-top: 30px;
+			font-size: 72px;
+		}
+		h3 {
+			font-size: 48px;
+		}
 	}
 }
