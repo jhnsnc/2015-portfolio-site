@@ -39,7 +39,7 @@ angular.module( 'cjPortfolioSite.skills', [
 				{ name: "AngularJS", rating: 4 },
 				{ name: "Polymer", rating: 3 },
 				{ name: "Bootstrap", rating: 5 },
-				{ name: "Snap/Rafa\353l (SVG)", rating: 3 },
+				{ name: "Snap/Rafael (SVG)", rating: 3 },
 				{ name: "SASS", rating: 5 },
 				{ name: "LESS", rating: 3 },
 				{ name: "Wordpress", rating: 4 },
