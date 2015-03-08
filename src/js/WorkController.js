@@ -33,6 +33,18 @@ angular.module( 'cjPortfolioSite.work', [
 				"hardware. The app then reminds the user periodically to look at the hotspots during "+
 				"gameplay. It was a fun project that involved bringing together features from several APIs."
 		}, {
+			name: "RaidNight",
+			category: "personal",
+			link: "http://www.overwolf.com/apps/tsgw2_contest/#!appId=capdejledaclghdgimahamnldhibdkiofaaamdjg",
+			linkText: "More Info",
+			thumbnailImage: "/assets/images/portfolio-screenshot-raid-night.jpg",
+			shortDescription: "Overwolf App",
+			tech: "JavaScript, Overwolf, TeamSpeak, Polymer, XPAPI",
+			description: "RaidNight was my entry in the 2014 Overwolf TeamSpeak App Contest. Using Polymer "+
+				"in an Overwolf app caused some strange conflicts, but I appreciated the subtle UI "+
+				"improvements it offered. I ended up implementing nearly all of my planned features and "+
+				"even though it didn't place in the contest, I found it very useful for leading guild raids."
+		}, {
 			name: "Shadow of a Thought",
 			category: "personal",
 			link: "http://gamejolt.com/games/shooter/shadow-of-a-thought/33167/",
