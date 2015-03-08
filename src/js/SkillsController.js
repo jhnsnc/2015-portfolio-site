@@ -27,14 +27,15 @@ angular.module( 'cjPortfolioSite.skills', [
 				{ name: "JavaScript", rating: 5 },
 				{ name: "ActionScript (Flash)", rating: 5 },
 				{ name: "PHP", rating: 3 },
-				{ name: "Java", rating: 3 }
+				{ name: "Java", rating: 3 },
+				{ name: "C++", rating: 3 }
 			]
 		};
 	var frontEndSection = {
 			name: "Front-End Skills",
 			skills: [
 				{ name: "jQuery", rating: 5 },
-				{ name: "JSON", rating: 5 },
+				{ name: "JSON/XML", rating: 5 },
 				{ name: "AngularJS", rating: 4 },
 				{ name: "Polymer", rating: 3 },
 				{ name: "Bootstrap", rating: 5 },

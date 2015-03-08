@@ -28,7 +28,7 @@ angular.module( 'cjPortfolioSite.work', [
 			thumbnailImage: "/assets/images/portfolio-screenshot-gamereye-trainer.jpg",
 			shortDescription: "Overwolf App",
 			tech: "JavaScript, Overwolf, Tobii EyeX (eye tracker)",
-			description: "This app won me second place in the Overwolf 2014 Sentry Challenge app contest."+
+			description: "This app won me second place in the Overwolf 2014 Sentry Challenge app contest. "+
 				"It allows users to configure hotspots on screen with their Tobii EyeX eye tracking "+
 				"hardware. The app then reminds the user periodically to look at the hotspots during "+
 				"gameplay. It was a fun project that involved bringing together features from several APIs."
@@ -40,10 +40,10 @@ angular.module( 'cjPortfolioSite.work', [
 			thumbnailImage: "/assets/images/portfolio-screenshot-shadow-of-a-thought.jpg",
 			shortDescription: "Flash Game",
 			tech: "Flash, Flex, ActionScript 3, Photoshop, FL Studio (music)",
-			description: "This was my entry for the Ludum Dare 30 game jam. That means that this entire "+
-				"game (including ALL assets) was created based on a prompt, from concept to completion, "+
-				"within 48 hours by me. This was not the first game jam I had participated in, but I "+
-				"am pleased with what I was able to accomplish with this one."
+			description: "This was my entry for the Ludum Dare 30 game jam. For this particular game jam, "+
+				"participants are given a prompt and then have 48 hours to complete a game. No outside help "+
+				"is allowed, so this game (including all assets) represents 48 hours of my work. Given the "+
+				"limitations, I'm pretty satisfied with the result."
 		}, {
 			name: "Destinations CU",
 			category: "bancvue",
