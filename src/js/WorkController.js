@@ -71,18 +71,6 @@ angular.module( 'cjPortfolioSite.work', [
 				"came together quickly, especially considering I was working with a different designer "+
 				"than normal."
 		}, {
-			name: "RaidNight",
-			category: "personal",
-			link: "http://www.overwolf.com/apps/tsgw2_contest/#!appId=capdejledaclghdgimahamnldhibdkiofaaamdjg",
-			linkText: "More Info",
-			thumbnailImage: "/assets/images/portfolio-screenshot-raid-night.jpg",
-			shortDescription: "Overwolf App",
-			tech: "JavaScript, Overwolf, TeamSpeak, Polymer, XPAPI",
-			description: "RaidNight was my entry in the 2014 Overwolf TeamSpeak App Contest. Using Polymer "+
-				"in an Overwolf app caused some strange conflicts, but I appreciated the subtle UI "+
-				"improvements it offered. I ended up implementing nearly all of my planned features and "+
-				"even though it didn't place in the contest, I found it very useful for leading guild raids."
-		}, {
 			name: "Atlantic Regional FCU",
 			category: "bancvue",
 			link: "https://www.atlanticregional.com/",
@@ -94,6 +82,18 @@ angular.module( 'cjPortfolioSite.work', [
 				"unique footer, the dropdowns in the primary nav, and the customized locations map. "+
 				"Working with a new team and new CMS was difficult, but we communicated frequently "+
 				 "and purposefully and the site turned out well as a result."
+		}, {
+			name: "RaidNight",
+			category: "personal",
+			link: "http://www.overwolf.com/apps/tsgw2_contest/#!appId=capdejledaclghdgimahamnldhibdkiofaaamdjg",
+			linkText: "More Info",
+			thumbnailImage: "/assets/images/portfolio-screenshot-raid-night.jpg",
+			shortDescription: "Overwolf App",
+			tech: "JavaScript, Overwolf, TeamSpeak, Polymer, XPAPI",
+			description: "RaidNight was my entry in the 2014 Overwolf TeamSpeak App Contest. Using Polymer "+
+				"in an Overwolf app caused some strange conflicts, but I appreciated the subtle UI "+
+				"improvements it offered. I ended up implementing nearly all of my planned features and "+
+				"even though it didn't place in the contest, I found it very useful for leading guild raids."
 		}, {
 			name: "Shadow of a Thought",
 			category: "personal",
@@ -119,6 +119,18 @@ angular.module( 'cjPortfolioSite.work', [
 				"expectations about feature support, which meant a lot of work customizing JS plugins, "+
 				"coding Flash fallbacks, and debugging cross-browser."
 		}, {
+			name: "Metropolitan National Bank",
+			category: "bancvue",
+			link: "https://www.metronationalbank.com/",
+			linkText: "Visit Site",
+			thumbnailImage: "/assets/images/portfolio-screenshot-metro-national.jpg",
+			shortDescription: "Bank Website",
+			tech: "HTML, CSS, jQuery, JavaScript, in-house CMS, PHP:TAL",
+			description: "Metropolitan was a difficult client. We received a lot of feedback from "+
+				"different departments (much of which was directly contradictory). Even with the requirement "+
+				"to splinter some pages off to different domains, we managed to keep the site coherent "+
+				"and the client happy."
+		}, {
 			name: "Impossible Carrot",
 			category: "personal",
 			link: "http://gamejolt.com/games/other/impossible-carrot/52482/",
@@ -130,18 +142,6 @@ angular.module( 'cjPortfolioSite.work', [
 				"difficult game that I could enjoy testing while improving my Flash skills. My design goal "+
 				"was a rising/falling intensity of gameplay that reflected the music. My primary technical "+
 				"goal was to push the limits of how many non-trivial particles I could make Flash handle."
-		}, {
-			name: "Metropolitan National Bank",
-			category: "bancvue",
-			link: "https://www.metronationalbank.com/",
-			linkText: "Visit Site",
-			thumbnailImage: "/assets/images/portfolio-screenshot-metro-national.jpg",
-			shortDescription: "Bank Website",
-			tech: "HTML, CSS, jQuery, JavaScript, in-house CMS, PHP:TAL",
-			description: "Metropolitan was a difficult client. They were in the middle of a restructuring "+
-				"and so we received a lot of feedback from different departments (much of which was "+
-				"directly contradictory). Even with the demand to splinter some pages off to different "+
-				"domains, we managed to keep the site coherent and the client happy."
 		}
 	];
 
